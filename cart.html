@@ -158,11 +158,11 @@
     </header>
     <!-- end header section -->
 
-    <!-- Add hero banner content for Cart page -->
+    <!-- Cart hero banner with cart table -->
     <section class="slider_section">
       <div class="container">
         <div class="row align-items-center" style="min-height: 350px;">
-          <div class="col-md-8 col-lg-6">
+          <div class="col-md-10 col-lg-8">
             <div class="detail-box">
               <h1>
                 Your Cart
@@ -170,6 +170,33 @@
               <p>
                 Review the items in your cart before proceeding to checkout. You can update quantities or remove items as needed.
               </p>
+              <div class="table-responsive" style="margin-top:2rem;">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Item</th>
+                      <th>Qty</th>
+                      <th>Price</th>
+                      <th>Total</th>
+                      <th>Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Delicious Pizza</td>
+                      <td><input type="number" value="1" min="1" class="form-control" style="width:70px;"></td>
+                      <td>$20</td>
+                      <td>$20</td>
+                      <td><button class="btn btn-danger btn-sm">Remove</button></td>
+                    </tr>
+                    <!-- ...repeat for each cart item... -->
+                  </tbody>
+                </table>
+                <div class="text-right">
+                  <h4>Grand Total: $20</h4>
+                  <a href="checkout.html" class="btn1">Proceed to Checkout</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -178,45 +205,6 @@
     <!-- end hero banner content -->
 
   </div>
-  <section class="cart_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Your Cart
-        </h2>
-      </div>
-      <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Qty</th>
-              <th>Price</th>
-              <th>Total</th>
-              <th>Remove</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Example row -->
-            <tr>
-              <td>Delicious Pizza</td>
-              <td><input type="number" value="1" min="1" class="form-control" style="width:70px;"></td>
-              <td>$20</td>
-              <td>$20</td>
-              <td><button class="btn btn-danger btn-sm">Remove</button></td>
-            </tr>
-            <!-- ...repeat for each cart item... -->
-          </tbody>
-        </table>
-      </div>
-      <div class="text-right">
-        <h4>Grand Total: $20</h4>
-        <a href="checkout.html" class="btn1">
-          Proceed to Checkout
-        </a>
-      </div>
-    </div>
-  </section>
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">

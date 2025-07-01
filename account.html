@@ -141,6 +141,8 @@
                   </g>
                   <g>
                   </g>
+                  <g>
+                  </g>
                 </svg>
               </a>
               <form class="form-inline">
@@ -158,11 +160,11 @@
     </header>
     <!-- end header section -->
 
-    <!-- Add hero banner content for Account page -->
+    <!-- Account hero banner with profile and order history -->
     <section class="slider_section">
       <div class="container">
-        <div class="row align-items-center" style="min-height: 350px;">
-          <div class="col-md-8 col-lg-6">
+        <div class="row align-items-start" style="min-height: 350px;">
+          <div class="col-md-6">
             <div class="detail-box">
               <h1>
                 My Account
@@ -170,6 +172,37 @@
               <p>
                 View and update your profile information, and check your order history all in one place.
               </p>
+              <form style="margin-top:2rem;">
+                <div>
+                  <input type="text" class="form-control mb-2" placeholder="Full Name" value="John Doe">
+                </div>
+                <div>
+                  <input type="email" class="form-control mb-2" placeholder="Email" value="john@example.com">
+                </div>
+                <div>
+                  <input type="text" class="form-control mb-2" placeholder="Phone" value="+01 1234567890">
+                </div>
+                <div>
+                  <input type="text" class="form-control mb-2" placeholder="Address" value="123 Main St">
+                </div>
+                <div class="btn_box mt-3">
+                  <button class="btn1" type="submit">Update Profile</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <h2 style="font-size:1.5rem;">Order History</h2>
+              <ul class="list-group mt-3">
+                <li class="list-group-item">
+                  <strong>Order #1234</strong> - $35 - <span class="text-success">Delivered</span>
+                </li>
+                <li class="list-group-item">
+                  <strong>Order #1233</strong> - $20 - <span class="text-warning">Processing</span>
+                </li>
+                <!-- ...more orders... -->
+              </ul>
             </div>
           </div>
         </div>
