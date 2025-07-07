@@ -1,10 +1,14 @@
-const express = require("express");
+const express = require('express');
 const app = express();
+const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/user');
+const cartRoutes = require('./routes/cart');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-const { createProxyMiddleware } = require("http-proxy-middleware");
-const { createProxy } = require("./proxy");
-const { createServer } = require("http");
-const { createServer: createHttpsServer } = require("https");
-const fs = require("fs");
+
+// Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/cart', cartRoutes);
+
+module.exports = app;
